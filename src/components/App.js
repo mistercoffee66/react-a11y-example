@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 import Home from './Home';
-import About from './About';
+import Contact from './Contact';
 import Dashboard from './Dashboard';
 
 import './App.css';
@@ -19,7 +19,7 @@ const App = () => (
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/contact">Contact</Link>
         </li>
         <li>
           <Link to="/dashboard">Dashboard</Link>
@@ -31,8 +31,8 @@ const App = () => (
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/about">
-            <About />
+          <Route path="/contact">
+            <Contact />
           </Route>
           <Route path="/dashboard">
             <Dashboard />
